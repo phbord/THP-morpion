@@ -12,4 +12,5 @@ require 'app/game'
 require 'app/player'
 require 'app/board'
 require 'app/board_case'
-
+require 'app/show'
+require 'app/application'
