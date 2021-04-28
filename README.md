@@ -35,11 +35,11 @@ Lancer le jeu : `ruby app.rb`
     - le joueur choisit une case déjà occupée...
 - ...
 ### Etape 3 : Astuces
-- remplacer *puts "-----------"* par *puts "-" * 30*
-- system *"clear"* ou *system "cls"* vident l'écran de ton terminal
+- remplacer `puts "-----------"` par `puts "-" * 30`
+- `system "clear"` ou `system "cls"` => vident l'écran de ton terminal
 ## 3. Liste des classes
 ### Faire tourner le jeu
-- *Game*
+- `Game`
   - jeu
   - initialise et lance une partie
     - crée 2 instances de *Player*
@@ -56,11 +56,11 @@ Lancer le jeu : `ruby app.rb`
       - permet de jouer un tour (demande au joueur ce qu'il veut faire et rempli la case)
       - s'occupe de finir la partie
       - propose aux joueurs de faire une nouvelle partie
-- *Player*
+- `Player`
   - les joueurs
   - 2 instances de cette classe
-  - un joueur a un nom et un symbole ("x" ou "o")
-- *Board*
+  - un joueur a un nom et un symbole (`x` ou `o`)
+- `Board`
   - plateau
   - 1 instance de cette classe
   - à l'initialisation du plateau, instancie immédiatement 9 BoardCase
@@ -70,19 +70,20 @@ Lancer le jeu : `ruby app.rb`
     - compter le nombre de coup joué pour identifier l'arrivée au 9ème coup sans vainqueur
   - Méthodes :
     - fait le lien entre les BoardCases et le Game
-    - il change les valeurs des BoardCases (de " " à "x" ou "o")
+    - il change les valeurs des BoardCases (de `" "` à `x` ou `o`)
     - vérifie en fonction de la combinaison des BoardCases si la partie est finie
       - un joueur a gagné
       - ou 9 cases sont remplies sans vainqueur
-- *BoardCase*
+- `BoardCase`
   - case
   - 9 instances de cette classe (état d'une case)
   - Variables d'instance : position (A1...) et contenu (vide, X ou O)
 ### Organiser le programme
-- *Application*
+- `Application`
   - lancer le jeu
-  - va faire une boucle infinie de parties (tant que les joueurs veulent continuer)
+  - va faire une boucle infinie de parties
+    - tant que les joueurs veulent continuer
   - lancer l'instanciation d'un Game
-- *Show*
+- `Show`
   - view
   - affichera l'état du plateau de jeu
