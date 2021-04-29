@@ -45,16 +45,16 @@ Lancer le jeu : `ruby app.rb`
     - crée 1 instance de *Board*
   - jouer 1 tour
   - si la partie est finie...
-  - Variables d'instance :
+  - ___Variables d'instance :___
     - lui rattacher les 2 players (array)
     - lui rattacher le Board
     - lui rattacher des informations annexes comme
        -  "quel joueur doit jouer ?"
        -  "quel est le statut de la partie (en cours ? player1 a gagné ? etc.)"...
-    - Méthodes :
-      - permet de jouer un tour (demande au joueur ce qu'il veut faire et rempli la case)
-      - s'occupe de finir la partie
-      - propose aux joueurs de faire une nouvelle partie
+  - ___Méthodes :___
+    - permet de jouer un tour (demande au joueur ce qu'il veut faire et rempli la case)
+    - s'occupe de finir la partie
+    - propose aux joueurs de faire une nouvelle partie
 - `Player`
   - les joueurs
   - 2 instances de cette classe
@@ -63,11 +63,11 @@ Lancer le jeu : `ruby app.rb`
   - plateau
   - 1 instance de cette classe
   - à l'initialisation du plateau, instancie immédiatement 9 BoardCase
-  - Variables d'instance :
+  - ___Variables d'instance :___
     - le Board doit embarquer les 9 BoardCase
     - lui attribuer un array ou hash
     - compter le nombre de coup joué pour identifier l'arrivée au 9ème coup sans vainqueur
-  - Méthodes :
+  - ___Méthodes :___
     - fait le lien entre les BoardCases et le Game
     - il change les valeurs des BoardCases (de `" "` à `x` ou `o`)
     - vérifie en fonction de la combinaison des BoardCases si la partie est finie
@@ -76,7 +76,9 @@ Lancer le jeu : `ruby app.rb`
 - `BoardCase`
   - case
   - 9 instances de cette classe (état d'une case)
-  - Variables d'instance : position (A1...) et contenu (vide, X ou O)
+  - ___Variables d'instance : ___
+    - position (A1...)
+    - et contenu (vide, X ou O)
 ### Organiser le programme
 - `Application`
   - lancer le jeu
