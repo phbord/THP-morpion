@@ -23,7 +23,7 @@ Lancer le jeu : `ruby app.rb`
 ### Etape 1 : Demander aux 2 joueurs leurs prénoms
 - affichage de la question
 - récupération du gets.chomp
-- sauvegarde dans un objet *Player*
+- sauvegarde dans un objet ___Player___
 ### Etape 2 : Afficher un plateau vide
 - demander à un joueur ce qu'il veut faire
 - en fonction de sa réponse remplir une case
@@ -41,18 +41,20 @@ Lancer le jeu : `ruby app.rb`
 - `Game`
   - jeu
   - initialise et lance une partie
-    - crée 2 instances de *Player*
-    - crée 1 instance de *Board*
+    - crée 2 instances de ___Player___
+    - crée 1 instance de ___Board___
   - jouer 1 tour
   - si la partie est finie...
   - ___Variables d'instance :___
-    - lui rattacher les 2 players (array)
-    - lui rattacher le Board
-    - lui rattacher des informations annexes comme
+    - lui rattacher les 2 ___players___ (array)
+    - lui rattacher le ___Board___
+    - lui rattacher des informations annexes :
        -  "quel joueur doit jouer ?"
        -  "quel est le statut de la partie (en cours ? player1 a gagné ? etc.)"...
   - ___Méthodes :___
-    - permet de jouer un tour (demande au joueur ce qu'il veut faire et rempli la case)
+    - permet de jouer un tour
+      - demande au joueur ce qu'il veut faire
+      - et rempli la case
     - s'occupe de finir la partie
     - propose aux joueurs de faire une nouvelle partie
 - `Player`
@@ -62,16 +64,16 @@ Lancer le jeu : `ruby app.rb`
 - `Board`
   - plateau
   - 1 instance de cette classe
-  - à l'initialisation du plateau => instancie immédiatement 9 BoardCase
+  - à l'initialisation du plateau => instancie immédiatement 9 ___BoardCase___
   - ___Variables d'instance :___
-    - le Board doit embarquer => 9 BoardCase
-    - lui attribuer un array ou hash
+    - le Board doit embarquer => 9 ___BoardCase___
+    - lui attribuer un *array* ou *hash*
     - compter le nombre de coup joué
       - pour identifier l'arrivée au 9ème coup sans vainqueur
   - ___Méthodes :___
-    - lien entre les BoardCases et le Game
-    - change les valeurs des BoardCases (de `" "` à `x` ou `o`)
-    - vérifie en fonction de la combinaison des BoardCases si la partie est finie
+    - fait le lien entre les ___BoardCases___ et le ___Game___
+    - change les valeurs des ___BoardCases___ (de `" "` à `x` ou `o`)
+    - vérifie en fonction de la combinaison des ___BoardCases___ si la partie est finie
       - joueur A a gagné
       - joueur B a gagné
       - ou pas de vainqueur => 9 cases remplies
@@ -86,7 +88,7 @@ Lancer le jeu : `ruby app.rb`
   - lancer le jeu
   - faire une boucle infinie de parties
     - => tant que les joueurs veulent continuer
-  - lancer l'instanciation d'un Game
+  - lancer l'instanciation d'un ___Game___
 - `Show`
   - view
   - affichera l'état du plateau de jeu
