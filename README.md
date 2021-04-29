@@ -62,28 +62,30 @@ Lancer le jeu : `ruby app.rb`
 - `Board`
   - plateau
   - 1 instance de cette classe
-  - à l'initialisation du plateau, instancie immédiatement 9 BoardCase
+  - à l'initialisation du plateau => instancie immédiatement 9 BoardCase
   - ___Variables d'instance :___
-    - le Board doit embarquer les 9 BoardCase
+    - le Board doit embarquer => 9 BoardCase
     - lui attribuer un array ou hash
-    - compter le nombre de coup joué pour identifier l'arrivée au 9ème coup sans vainqueur
+    - compter le nombre de coup joué
+      - pour identifier l'arrivée au 9ème coup sans vainqueur
   - ___Méthodes :___
-    - fait le lien entre les BoardCases et le Game
-    - il change les valeurs des BoardCases (de `" "` à `x` ou `o`)
+    - lien entre les BoardCases et le Game
+    - change les valeurs des BoardCases (de `" "` à `x` ou `o`)
     - vérifie en fonction de la combinaison des BoardCases si la partie est finie
-      - un joueur a gagné
-      - ou 9 cases sont remplies sans vainqueur
+      - joueur A a gagné
+      - joueur B a gagné
+      - ou pas de vainqueur => 9 cases remplies
 - `BoardCase`
   - case
   - 9 instances de cette classe (état d'une case)
   - ___Variables d'instance : ___
     - position (A1...)
-    - et contenu (vide, X ou O)
+    - et contenu (vide, `X` ou `O`)
 ### Organiser le programme
 - `Application`
   - lancer le jeu
-  - va faire une boucle infinie de parties
-    - tant que les joueurs veulent continuer
+  - faire une boucle infinie de parties
+    - => tant que les joueurs veulent continuer
   - lancer l'instanciation d'un Game
 - `Show`
   - view
