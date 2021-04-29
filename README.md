@@ -24,8 +24,7 @@ Lancer le jeu : `ruby app.rb`
 - affichage de la question
 - récupération du gets.chomp
 - sauvegarde dans un objet *Player*
-### Etape 2
-- afficher un plateau vide
+### Etape 2 : Afficher un plateau vide
 - demander à un joueur ce qu'il veut faire
 - en fonction de sa réponse remplir une case
   - sauver l'information dans un objet
@@ -34,7 +33,7 @@ Lancer le jeu : `ruby app.rb`
     - la saisie du joueur ne correspond pas à une case
     - le joueur choisit une case déjà occupée...
 - ...
-### Etape 3 : Astuces
+### Astuces
 - remplacer `puts "-----------"` par `puts "-" * 30`
 - `system "clear"` ou `system "cls"` => vident l'écran de ton terminal
 ## 3. Liste des classes
@@ -66,7 +65,7 @@ Lancer le jeu : `ruby app.rb`
   - à l'initialisation du plateau, instancie immédiatement 9 BoardCase
   - Variables d'instance :
     - le Board doit embarquer les 9 BoardCase
-    - lui attribuer zn array ou hash
+    - lui attribuer un array ou hash
     - compter le nombre de coup joué pour identifier l'arrivée au 9ème coup sans vainqueur
   - Méthodes :
     - fait le lien entre les BoardCases et le Game

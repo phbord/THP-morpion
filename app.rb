@@ -10,3 +10,4 @@ require 'app/show'
 require 'app/application'
 #binding.pry
 
+game = Game.new
