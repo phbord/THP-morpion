@@ -1,6 +1,13 @@
 # README
 
-Lancer le jeu : `ruby app.rb`
+## 0. Commandes
+### Lancer le jeu
+`ruby app.rb`
+
+### Choisir une case
+`chiffre,chiffre`
+- ex: `1,2`
+- les chiffres possibles sont 1, 2 ou 3
 
 ## 1. Introduction
 - jeu à 2 joueurs humains

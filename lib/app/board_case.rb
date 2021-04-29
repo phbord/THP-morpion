@@ -7,12 +7,11 @@ class BoardCase
     end
 
     def change_content(symbol)
+
+        if(self.content)
+            puts "in BoardCase change_content is call but symbol is there"
+            return 
+        end
         self.content = symbol
     end
-    def hello
-        puts "hello i'm at #{position}, my content is #{position} "
-    end
 end
-
-#game.,e.player1, [1,1])
-#()

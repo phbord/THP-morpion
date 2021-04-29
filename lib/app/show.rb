@@ -5,27 +5,17 @@ class Show
         @board = board
     end
 
-    def show_board
-        # puts "-" * 13
-        # content_y = ""
-        # (1..3).each do |v|
-        #     content_y += "|"
-        #     content_y += " #{board.board.get_case([i,j])} "
-        # end
-        # content_y += "|"
-        # puts content_y
-
+    def status
         puts "-" * 13
-        (1..3).each do |i|
+        (1..3).each do |x|
             print('|')
-            (1..3).each do |j|
-                unless board.board.get_case([i,j]).content
+            (1..3).each do |y|
+                unless board.get_case([x,y]).content
                     print('   ')
                 else
-                    print " #{board.board.get_case([i,j]).content} "
+                    print " #{board.get_case([x,y]).content} "
                 end
-                print('|')
-                
+                print('|') 
             end
             puts
         end

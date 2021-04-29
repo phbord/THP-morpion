@@ -10,10 +10,12 @@ require 'app/show'
 require 'app/application'
 #binding.pry
 
-application = Application.new('pierre-henri', 'jocelin')
-
+application = Application.new
+application.start
+# game.player_turn(game.player1)
 binding.pry
 
 #3. faire que le jeu se lance et logique victoire app
 #4. refactor
 #5. un programme qui joue le gens
+
