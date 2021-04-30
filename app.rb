@@ -13,7 +13,7 @@ require 'app/application'
 application = Application.new
 application.start
 # game.player_turn(game.player1)
-binding.pry
+
 
 #3. faire que le jeu se lance et logique victoire app
 #4. refactor

@@ -40,15 +40,17 @@ class Game
             puts "Do you want play again? [y/n]"
             $reponse = gets.chomp
             break if ($reponse.downcase.start_with?("y") || $reponse.downcase.start_with?("n"))
-            if ($reponse.downcase.start_with?("y"))
+        end
+        if ($reponse.downcase.start_with?("y"))
                 @board = Board.new
                 @show = Show.new(@board)
                 puts "replay"
                 self.play
-            else
+        else
+                puts "see you !"
                 return
-            end
         end
+        
     end
 
     def line_victory
