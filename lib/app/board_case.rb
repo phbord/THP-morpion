@@ -10,7 +10,7 @@ class BoardCase
 
         if(self.content)
             puts "in BoardCase change_content is call but symbol is there"
-            return 
+            return
         end
         self.content = symbol
     end

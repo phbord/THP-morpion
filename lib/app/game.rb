@@ -50,7 +50,6 @@ class Game
                 puts "see you !"
                 return
         end
-        
     end
 
     def line_victory
